@@ -1,6 +1,9 @@
 import { expect } from "chai";
+import { format } from "..";
+
 describe("Example Test", () => {
-    it("Should pass", () => {
-        expect(true).to.be.true;
-    });
+	it("Should format", (done) => {
+		expect(format("Test")).to.equal("Test formatted!");
+		done();
+	});
 });

@@ -1,5 +1,3 @@
-function example(str: string): void {
-    console.log(str);
+export function format(str: string): string {
+	return str + " formatted!";
 }
-const str = "This is a test string";
-example(str);
